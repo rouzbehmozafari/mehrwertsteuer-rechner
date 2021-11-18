@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITLE</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+<!-- HEADER -->
+    <header>
+    </header>
+<!-- MAIN -->
+    <main>
+        <div>
+            <div>
+                <p>Was soll berechnet werden?</p>
+                <label for="">
+                    <input type="radio" name="" value="" id="nzub">
+                    Merhrwetsteuer aufschlagen (Neto zu Brutto)
+                </label>
+                <label for="">
+                    <input type="radio" name="" id="bzun">
+                    Mehrwersteuer abziehen (Brutto zu Netto)
+                </label>
+            </div>
+            <div>
+                <p>Merhrwetsteuersatz</p>
+                <label for="">
+                    <input type="radio" name="" value='19' id="more">
+                    19%
+                </label>
+                <label for="">
+                    <input type="radio" name="" value='7' id="less">
+                    7%
+                </label>
+            </div>
+            <p>Nettobetrag(Preis ohne Mehrwertsteur) in Euro</p>
+            <input type="number" name="" id="betrag">
+            <button id="but" onclick="process()">BERECHNEN</button>
+            <div>
+                <p>Ergebis</p>
+                <p>Mehrwersteuerbetrag</p>
+                <p id="res1"></p>
+            </div>
+            <div>
+                <p id="born">Bruttobetrag (Endpreis)</p>
+                <p id="res2"></p>
+            </div>
+        </div>
+    </main>
+<!-- FOOTER -->
+    <footer>
+    </footer>
+<!-- SCRIPT -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
